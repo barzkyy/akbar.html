@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jadi pacar Akbar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Jadi pacar Akbar Nurrizky</h1>
+    <p>Di isi dengan cinta dan sayang</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name">Nama awal kamu cantik: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Nama akhir kamu cantik: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Email mana email!! <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Yang biasa buat nutup-nutipin: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline"/> Sayang aja</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline"/> Sayang Banget</label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline"/> saya nerima <a href="https://www.instagram.com/akbarnrzky/?hl=id">Akbar Nurrizky</a>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">Papnya mana nih manis: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="age">Umurnya berapa (gausah dimuda-mudain): <input id="age" type="number" name="age" min="13" max="120" /></label>
+        <label for="referrer">Sayang dengan akbar dari kapan?
+          <select id="referrer" name="referrer">
+            <option value="">(pilih semua)</option>
+            <option value="1">dari smp</option>
+            <option value="2">dari sma</option>
+            <option value="3">dari kuliah</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio">Surat Cinta:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="aku sayang akbar karena..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
